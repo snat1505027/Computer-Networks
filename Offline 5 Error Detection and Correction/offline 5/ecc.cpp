@@ -169,6 +169,7 @@ string addErrorBits(string data){
     int range = 100+1;
     float probOfErrorbits = p*100;
     int k = 0;
+    srand(time(0));
     for(int i = 0;i<len;i++){
         float tf = rand()%range;
         if(tf <= probOfErrorbits){
