@@ -1,0 +1,12 @@
+There will be an online on Packet Tracer next week in your respective sessional classes. The syllabus of the online will be as follows.
+
+1. Creating topologies: selecting devices such as host/pc, switch and router; connecting devices with appropriate cables.
+2. Configuring hosts with required parameters such as IP address, Subnet mask and default gateway; understanding significance of subnet mask and default gatway.
+3. Testing connectivity from a host's  command line using commands such as Ping and Tracert; understanding different types of output from Ping command.
+4. Tracing packet graphically using simulation mode; filtering protocols in simulation mode; tracing packet continuously or in step by step fashion; inspecting a packet at some node of its path from source to destination; identifying reason for packet drop in any device; 
+4. Configuring router interfaces with appropriate IP address and subnet mask. Enabling router interfaces in case they are disabled.
+5. Configuring static route in a router.
+6. Configuring default route in a router, i.e., network address: 0.0.0.0 and subnet mask: 0.0.0.0
+7. Configuring dynamic routing protocol RIP in a router. 
+8. Inspecting routing table graphically; observe how routing tables are initailly populated; effect of static/dynamic route configuration on routing tables; effect of enabling/disabling interfaces on routing table.
+9. Creating and configuring networks with many routers connected in any topology. 

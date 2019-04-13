@@ -1,0 +1,209 @@
+﻿-----  Stop and Wait Network Simulator Version 1.1 --------
+
+Enter the number of messages to simulate: 10
+Enter  packet loss probability [enter 0.0 for no loss]:0.1
+Enter packet corruption probability [0.0 for no corruption]:0.3
+Enter average time between messages from sender's layer5 [ > 0.0]:13
+Enter TRACE:2
+
+EVENT time: 24.317463,  type: 1, fromlayer5  entity: 0
+
+#######
+A is going to send the following packet:
+Sequence number: 0
+Checksum: 12947
+Message: aaaaaaaaaaaaaaaaaaa
+The ACK A is expecting to see is 0
+#######
+          TOLAYER3: packet being corrupted
+
+EVENT time: 29.782558,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: Zaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 0
+#######
+
+EVENT time: 31.964182,  type: 2, fromlayer3  entity: 0
+
+##########
+A has received the ACK packet!
+ACK: -1
+Current expected ACK: 0
+########
+
+EVENT time: 33.984676,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: aaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 0
+#######
+          TOLAYER3: packet being corrupted
+
+EVENT time: 38.451942,  type: 2, fromlayer3  entity: 0
+
+##########
+A has received the ACK packet!
+ACK: 1633771873
+Current expected ACK: 0
+########
+          TOLAYER3: packet being lost
+
+EVENT time: 45.662292,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 56.823242,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 63.451942,  type: 0, timerinterrupt   entity: 0
+
+#######
+A timer has been interrupted, A will now resend the packet.
+#######
+
+EVENT time: 69.750359,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: aaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 1
+#######
+
+EVENT time: 75.780006,  type: 2, fromlayer3  entity: 0
+
+##########
+A has received the ACK packet!
+ACK: 1998602528
+Current expected ACK: 0
+########
+
+EVENT time: 81.172028,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 83.434547,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: aaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 1
+#######
+          TOLAYER3: packet being corrupted
+
+EVENT time: 85.119232,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 89.011345,  type: 2, fromlayer3  entity: 0
+
+##########
+A has received the ACK packet!
+ACK: 255
+Current expected ACK: 0
+########
+
+EVENT time: 93.169930,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: aaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 1
+#######
+          TOLAYER3: packet being lost
+
+EVENT time: 110.647423,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 114.011345,  type: 0, timerinterrupt   entity: 0
+
+#######
+A timer has been interrupted, A will now resend the packet.
+#######
+
+EVENT time: 116.641998,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: aaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 1
+#######
+
+EVENT time: 118.517189,  type: 2, fromlayer3  entity: 0
+
+##########
+A has received the ACK packet!
+ACK: 1998602528
+Current expected ACK: 0
+########
+          TOLAYER3: packet being lost
+
+EVENT time: 123.185799,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 137.184418,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 138.069534,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 143.517181,  type: 0, timerinterrupt   entity: 0
+
+#######
+A timer has been interrupted, A will now resend the packet.
+#######
+          TOLAYER3: packet being corrupted
+
+EVENT time: 149.095795,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: Zaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 1
+#######
+          TOLAYER3: packet being corrupted
+
+EVENT time: 149.399384,  type: 1, fromlayer5  entity: 0
+                *****Waiting for ACK*****
+
+EVENT time: 155.345734,  type: 2, fromlayer3  entity: 0
+
+##########
+A has received the ACK packet!
+ACK: 1998602528
+Current expected ACK: 0
+########
+          TOLAYER3: packet being corrupted
+
+EVENT time: 160.165009,  type: 2, fromlayer3  entity: 1
+
+#######
+B input here is the packet I received:
+Sequence number: 0
+Checksum: 12947
+Message: Zaaaaaaaaaaaaaaaaaa
+The ACK B is expecting to send is 1
+#######
+
+EVENT time: 163.826767,  type: 2, fromlayer3  entity: 0
+
+##########
+A has received the ACK packet!
+ACK: 0
+Current expected ACK: 0
+########
+ Simulator terminated at time 163.826767
+ after sending 10 msgs from layer5

@@ -1,0 +1,533 @@
+﻿-----  Stop and Wait Network Simulator Version 1.1 -------- 
+
+Enter the number of messages to simulate: 20
+Enter  packet loss probability [enter 0.0 for no loss]:0.2
+Enter packet corruption probability [0.0 for no corruption]:0.2
+Enter average time between messages from sender's layer5 [ > 0.0]:10
+Enter TRACE:2
+
+EVENT time: 18.705740,  type: 1, fromlayer5  entity: 1
+
+#######
+[1] is going to send the following packet:
+Sequence number: 0
+Checksum: 12843
+Message: aaaaaaaaaaaaaaaaaaaa
+The ACK A is expecting to see is 0
+#######
+[1] Send: seq = 0 ack = 7 checksum = 322b aaaaaaaaaaaaaaaaaaaa
+
+EVENT time: 26.070892,  type: 2, fromlayer3  entity: 0
+
+##########
+[0] has received the ACK packet!
+ACK: 7
+Current expected ACK: 0
+########
+[0] Accepted: seq = 0 ack = 7 checksum = 322b aaaaaaaaaaaaaaaaaaaa
+
+EVENT time: 28.172142,  type: 1, fromlayer5  entity: 0
+          TOLAYER3: packet being lost
+
+#######
+[0] is going to send the following packet:
+Sequence number: 0
+Checksum: 10280
+Message: bbbbbbbbbbbbbbbbbbbb
+The ACK A is expecting to see is 0
+#######
+[0] Send: seq = 0 ack = 0 checksum = 2828 bbbbbbbbbbbbbbbbbbbb
+
+EVENT time: 30.797972,  type: 1, fromlayer5  entity: 1
+          TOLAYER3: packet being corrupted
+
+#######
+[1] is going to send the following packet:
+Sequence number: 1
+Checksum: 7702
+Message: cccccccccccccccccccc
+The ACK A is expecting to see is 0
+#######
+[1] Send: seq = 1 ack = 7 checksum = 1e16 cccccccccccccccccccc
+
+EVENT time: 33.065739,  type: 1, fromlayer5  entity: 0
+
+#######
+[0] is going to send the following packet:
+Sequence number: 1
+Checksum: 5139
+Message: dddddddddddddddddddd
+The ACK A is expecting to see is 0
+#######
+[0] Send: seq = 1 ack = 0 checksum = 1413 dddddddddddddddddddd
+
+EVENT time: 34.128895,  type: 1, fromlayer5  entity: 0
+          TOLAYER3: packet being corrupted
+
+#######
+[0] is going to send the following packet:
+Sequence number: 2
+Checksum: 2568
+Message: eeeeeeeeeeeeeeeeeeee
+The ACK A is expecting to see is 0
+#######
+[0] Send: seq = 2 ack = 0 checksum = a08 eeeeeeeeeeeeeeeeeeee
+
+EVENT time: 34.705742,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being corrupted
+
+EVENT time: 35.265236,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 37.631577,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 38.337967,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 39.415501,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 44.172142,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 46.797974,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being lost
+
+EVENT time: 47.356628,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 48.490929,  type: 1, fromlayer5  entity: 0
+
+#######
+[0] is going to send the following packet:
+Sequence number: 3
+Checksum: 65532
+Message: ffffffffffffffffffff
+The ACK A is expecting to see is 0
+#######
+[0] Send: seq = 3 ack = 0 checksum = fffc ffffffffffffffffffff
+
+EVENT time: 48.673168,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 50.128895,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 50.705742,  type: 0, timerinterrupt   entity: 1
+
+EVENT time: 51.515213,  type: 2, fromlayer3  entity: 1
+
+##########
+[1] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[1] Accepted: seq = 0 ack = 0 checksum = 2828 bbbbbbbbbbbbbbbbbbbb
+
+EVENT time: 57.353184,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 59.259094,  type: 1, fromlayer5  entity: 0
+          TOLAYER3: packet being corrupted
+
+#######
+[0] is going to send the following packet:
+Sequence number: 4
+Checksum: 62961
+Message: gggggggggggggggggggg
+The ACK A is expecting to see is 0
+#######
+[0] Send: seq = 4 ack = 0 checksum = f5f1 gggggggggggggggggggg
+
+EVENT time: 59.875675,  type: 1, fromlayer5  entity: 1
+          TOLAYER3: packet being corrupted
+
+#######
+[1] is going to send the following packet:
+Sequence number: 2
+Checksum: 60393
+Message: hhhhhhhhhhhhhhhhhhhh
+The ACK A is expecting to see is 1
+#######
+[1] Send: seq = 2 ack = 0 checksum = ebe9 hhhhhhhhhhhhhhhhhhhh
+
+EVENT time: 60.101822,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 62.049831,  type: 1, fromlayer5  entity: 0
+
+#######
+[0] is going to send the following packet:
+Sequence number: 5
+Checksum: 57820
+Message: iiiiiiiiiiiiiiiiiiii
+The ACK A is expecting to see is 0
+#######
+[0] Send: seq = 5 ack = 0 checksum = e1dc iiiiiiiiiiiiiiiiiiii
+
+EVENT time: 62.627285,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 64.490929,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 64.522560,  type: 1, fromlayer5  entity: 1
+
+#######
+[1] is going to send the following packet:
+Sequence number: 3
+Checksum: 55252
+Message: jjjjjjjjjjjjjjjjjjjj
+The ACK A is expecting to see is 1
+#######
+[1] Send: seq = 3 ack = 0 checksum = d7d4 jjjjjjjjjjjjjjjjjjjj
+
+EVENT time: 66.705742,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 68.877220,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 69.334587,  type: 2, fromlayer3  entity: 0
+
+##########
+[0] has received the ACK packet!
+ACK: 7
+Current expected ACK: 0
+########
+[0] Accepted: seq = 1 ack = 7 checksum = 1e16 cccccccccccccccccccc
+
+EVENT time: 70.563103,  type: 1, fromlayer5  entity: 1
+          TOLAYER3: packet being corrupted
+
+#######
+[1] is going to send the following packet:
+Sequence number: 4
+Checksum: 52681
+Message: kkkkkkkkkkkkkkkkkkkk
+The ACK A is expecting to see is 1
+#######
+[1] Send: seq = 4 ack = 0 checksum = cdc9 kkkkkkkkkkkkkkkkkkkk
+
+EVENT time: 71.140923,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 73.696503,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 75.837540,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 78.049835,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being corrupted
+
+EVENT time: 79.314171,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 80.490929,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 80.522560,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being corrupted
+
+EVENT time: 83.624672,  type: 2, fromlayer3  entity: 0
+
+##########
+[0] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[0] Accepted: seq = 2 ack = 0 checksum = ebe9 hhhhhhhhhhhhhhhhhhhh
+
+EVENT time: 86.005516,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 86.563103,  type: 0, timerinterrupt   entity: 1
+
+EVENT time: 87.423958,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 88.411385,  type: 1, fromlayer5  entity: 1
+          TOLAYER3: packet being lost
+
+#######
+[1] is going to send the following packet:
+Sequence number: 5
+Checksum: 50110
+Message: llllllllllllllllllll
+The ACK A is expecting to see is 1
+#######
+[1] Send: seq = 5 ack = 0 checksum = c3be llllllllllllllllllll
+
+EVENT time: 88.938057,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 91.478119,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 96.490929,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+
+EVENT time: 96.490929,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 96.522560,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+
+EVENT time: 96.864975,  type: 2, fromlayer3  entity: 1
+
+##########
+[1] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[1] Accepted: seq = 1 ack = 0 checksum = 1413 dddddddddddddddddddd
+
+EVENT time: 98.068947,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 98.569214,  type: 2, fromlayer3  entity: 1
+
+##########
+[1] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[1] Accepted: seq = 2 ack = 0 checksum = a08 eeeeeeeeeeeeeeeeeeee
+
+EVENT time: 101.301315,  type: 1, fromlayer5  entity: 1
+
+#######
+[1] is going to send the following packet:
+Sequence number: 6
+Checksum: 47537
+Message: mmmmmmmmmmmmmmmmmmmm
+The ACK A is expecting to see is 1
+#######
+[1] Send: seq = 6 ack = 2 checksum = b9b1 mmmmmmmmmmmmmmmmmmmm
+
+EVENT time: 102.446968,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 104.411385,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 105.768730,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 106.527077,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 107.365211,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 110.919540,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 111.083427,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 112.017563,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 112.490929,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 112.490929,  type: 0, timerinterrupt   entity: 0
+
+EVENT time: 114.166946,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 115.750816,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 115.955101,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 117.301315,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being lost
+
+EVENT time: 119.069717,  type: 1, fromlayer5  entity: 0
+
+#######
+[0] is going to send the following packet:
+Sequence number: 6
+Checksum: 44967
+Message: nnnnnnnnnnnnnnnnnnnn
+The ACK A is expecting to see is 1
+#######
+[0] Send: seq = 6 ack = 2 checksum = afa7 nnnnnnnnnnnnnnnnnnnn
+
+EVENT time: 120.411385,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+
+EVENT time: 120.997940,  type: 2, fromlayer3  entity: 1
+
+##########
+[1] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[1] Accepted: seq = 3 ack = 0 checksum = fffc ffffffffffffffffffff
+
+EVENT time: 122.146622,  type: 1, fromlayer5  entity: 0
+
+#######
+[0] is going to send the following packet:
+Sequence number: 7
+Checksum: 42396
+Message: oooooooooooooooooooo
+The ACK A is expecting to see is 1
+#######
+[0] Send: seq = 7 ack = 2 checksum = a59c oooooooooooooooooooo
+
+EVENT time: 122.494331,  type: 2, fromlayer3  entity: 0
+
+##########
+[0] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[0] Accepted: seq = 3 ack = 0 checksum = d7d4 jjjjjjjjjjjjjjjjjjjj
+
+EVENT time: 126.602081,  type: 2, fromlayer3  entity: 0
+
+##########
+[0] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[0] Accepted: seq = 4 ack = 0 checksum = cdc9 kkkkkkkkkkkkkkkkkkkk
+
+EVENT time: 128.490936,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 129.305557,  type: 1, fromlayer5  entity: 1
+          TOLAYER3: packet being corrupted
+
+#######
+[1] is going to send the following packet:
+Sequence number: 7
+Checksum: 39825
+Message: pppppppppppppppppppp
+The ACK A is expecting to see is 1
+#######
+[1] Send: seq = 7 ack = 3 checksum = 9b91 pppppppppppppppppppp
+
+EVENT time: 129.941681,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 133.301315,  type: 0, timerinterrupt   entity: 1
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+
+EVENT time: 136.527512,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 138.146622,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being lost
+
+EVENT time: 138.941238,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 139.264130,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 141.744110,  type: 1, fromlayer5  entity: 1
+
+#######
+[1] is going to send the following packet:
+Sequence number: 0
+Checksum: 37262
+Message: qqqqqqqqqqqqqqqqqqqq
+The ACK A is expecting to see is 1
+#######
+[1] Send: seq = 0 ack = 3 checksum = 918e qqqqqqqqqqqqqqqqqqqq
+
+EVENT time: 142.260513,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 143.372223,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 143.409546,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 144.490936,  type: 0, timerinterrupt   entity: 0
+          TOLAYER3: packet being lost
+          TOLAYER3: packet being corrupted
+          TOLAYER3: packet being lost
+
+EVENT time: 145.305557,  type: 0, timerinterrupt   entity: 1
+
+EVENT time: 145.690842,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 146.765656,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 148.612854,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 148.836075,  type: 1, fromlayer5  entity: 0
+
+#######
+[0] is going to send the following packet:
+Sequence number: 0
+Checksum: 34691
+Message: rrrrrrrrrrrrrrrrrrrr
+The ACK A is expecting to see is 1
+#######
+[0] Send: seq = 0 ack = 4 checksum = 8783 rrrrrrrrrrrrrrrrrrrr
+
+EVENT time: 150.978058,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 154.146622,  type: 0, timerinterrupt   entity: 0
+
+EVENT time: 155.151764,  type: 2, fromlayer3  entity: 1
+
+##########
+[1] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[1] Accepted: seq = 4 ack = 0 checksum = f5f1 gggggggggggggggggggg
+
+EVENT time: 157.326370,  type: 2, fromlayer3  entity: 0
+
+##########
+[0] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[0] Accepted: seq = 5 ack = 0 checksum = c3be llllllllllllllllllll
+
+EVENT time: 159.454071,  type: 2, fromlayer3  entity: 0
+
+##########
+[0] has received the ACK packet!
+ACK: 2
+Current expected ACK: 1
+########
+[0] Accepted: seq = 6 ack = 2 checksum = b9b1 mmmmmmmmmmmmmmmmmmmm
+
+EVENT time: 162.753769,  type: 2, fromlayer3  entity: 1
+
+##########
+[1] has received the ACK packet!
+ACK: 0
+Current expected ACK: 1
+########
+[1] Accepted: seq = 5 ack = 0 checksum = e1dc iiiiiiiiiiiiiiiiiiii
+
+EVENT time: 166.117050,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 168.159012,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 168.499573,  type: 1, fromlayer5  entity: 1
+
+EVENT time: 169.259155,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 170.664780,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 171.809113,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 174.227478,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 174.996490,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 177.242325,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 178.452881,  type: 2, fromlayer3  entity: 0
+
+EVENT time: 182.975372,  type: 2, fromlayer3  entity: 1
+
+EVENT time: 183.889893,  type: 1, fromlayer5  entity: 1
+
+EVENT time: 186.846710,  type: 2, fromlayer3  entity: 1
+ Simulator terminated at time 186.846710
+ after sending 20 msgs from layer5

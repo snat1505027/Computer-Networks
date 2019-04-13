@@ -1,0 +1,13 @@
+at = AccountTable(account_type = "Savings", user_name ="Salman Shamil", password = "1234", age = 22, sex = "Male", marital_status = "Unmarried", nominee_id = , balance = 70000)
+
+
+
+at = AccountTable(account_type = "Savings", user_name ="Salman Shamil", password = "1234", age = 22, sex = "Male", marital_status = "Unmarried", balance = 70000)
+
+
+
+cld = CarLoanData(account_id = , monthly_income = 10000, monthly_expenditure = 5000, total_asset = 200000, car_price = 1000000, requested_loan_amount = 700000, car_condition = "old", car_vendor = "type1", car_brand = "toyota", nominee_id = )
+
+from polls.models import AccountTable, CarLoanData
+
+at2 = AccountTable(account_type = "Savings", user_name ="Nishat Anjum", password = "1234", age = 22, sex = "Female", marital_status = "Unmarried", nominee_id = at, balance = 60000)
